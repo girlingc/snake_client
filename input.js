@@ -31,6 +31,15 @@ const handleUserInput = (button) => {
   if (button === 'd') {
     connection.write("Move: right")
   }
+  if (button === 'j') {
+    connection.write("Say: Hey")
+  }  
+  if (button === 'k') {
+    connection.write("Say: POG")
+  }
+  if (button === 'l') {
+    connection.write('Say: Huh')
+  }
 };
 
 
