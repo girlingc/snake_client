@@ -20,7 +20,7 @@ const connect = function() {
   //   setInterval(func = () => {
   //     conn.write("Move: right")
   //   }, 500);
-  // });
+  });
   
   conn.on('data', data => {
     console.log(data);
