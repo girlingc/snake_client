@@ -1,11 +1,11 @@
 let connection;
-const { TEXT } = require('./constants');
+const { text } = require('./constants');
 
 const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
-  stdin.setEncoding(TEXT);
+  stdin.setEncoding(text);
   stdin.resume();
   stdin.on("data", handleUserInput);
 
@@ -44,6 +44,9 @@ const handleUserInput = (button) => {
   }
   if (button === 'l') {
     connection.write('Say: Huh');
+  }
+  if (button === 'h') {
+    connection.write('Say: Hi Alex')
   }
 };
 
